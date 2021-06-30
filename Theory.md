@@ -1,4 +1,13 @@
+# Kafka
+Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages from one end-point to another. Kafka is suitable for both offline and online message consumption. Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss. Kafka is built on top of the ZooKeeper synchronization service. It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
+
+
 # Core Components
+
+* Event: An event records the fact that "something happened" in the world or in your business. It is also called record or message in the documentation. Conceptually, an event has a key, value, timestamp, and optional metadata headers. Here's an example event:
+Event key: "Alice"
+Event value: "Made a payment of $200 to Bob"
+Event timestamp: "Jun. 25, 2020 at 2:06 p.m."
 
 * Producer : An application that  sends messages  to kafka (json,xml,string,file ). But for Kafka it is an array of bytes. 
 Each row as a message .
