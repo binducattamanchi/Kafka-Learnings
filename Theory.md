@@ -1,6 +1,8 @@
 # Kafka
 Apache Kafka is a distributed publish-subscribe messaging system and a robust queue that can handle a high volume of data and enables you to pass messages from one end-point to another. Kafka is suitable for both offline and online message consumption. Kafka messages are persisted on the disk and replicated within the cluster to prevent data loss. Kafka is built on top of the ZooKeeper synchronization service. It integrates very well with Apache Storm and Spark for real-time streaming data analysis.
 
+![image](https://user-images.githubusercontent.com/32897934/124020017-63449f80-da07-11eb-9ce0-2b9a1e6aa0f0.png)
+
 
 # Core Components
 
@@ -36,7 +38,7 @@ Compact Topic
 ![image](https://user-images.githubusercontent.com/32897934/124017339-393dae00-da04-11eb-9287-f03026ff78b5.png)
 
 
-* Partitions :
+* Partitions : Within the Kafka cluster, topics are divided into partitions, and the partitions are replicated across brokers. From each partition, multiple consumers can read from a topic in parallel. It’s also possible to have producers add a key to a message—all messages with the same key will go to the same partition.
  ![image](https://user-images.githubusercontent.com/32897934/124017187-10b5b400-da04-11eb-8006-1f213b9265d9.png)
 
 * Offset : A Sequence id given to messages  as they  arrive  in a partition 
